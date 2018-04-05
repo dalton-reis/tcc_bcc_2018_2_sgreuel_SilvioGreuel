@@ -4,6 +4,7 @@
 **PWA**
 - https://scholarspace.manoa.hawaii.edu/bitstream/10125/50607/1/paper0720.pdf
 - http://www.scitepress.org/Papers/2017/63537/63537.pdf
+- https://whatwebcando.today/
 
 **IFTTT, Zapier, Flow**
 - http://www.jsoftware.us/vol10/115-TE06.pdf
