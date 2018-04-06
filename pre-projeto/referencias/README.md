@@ -34,4 +34,7 @@
 
 **2018-04-02**
 
-- *13h32* [NIELSON, Rodrigo Orthmann 2018] https://furb-my.sharepoint.com/personal/dalton_furb_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdalton%5Ffurb%5Fbr%2FDocuments%2F%5FTCCs%2F%5FTCCs%2FRodrigoOrthmannNielson%2FDocumentos%2F2017%2D10%2D22%5F17%2D42%5FPR%5FRodrigoOrthmannNielson%2Epdf&parent=%2Fpersonal%2Fdalton%5Ffurb%5Fbr%2FDocuments%2F%5FTCCs%2F%5FTCCs%2FRodrigoOrthmannNielson%2FDocumentos&slrid=0196599e%2Db0f8%2D5000%2D7cf0%2Da2613a281063
+- *13h32m* [NIELSON, Rodrigo Orthmann 2018] https://furb-my.sharepoint.com/personal/dalton_furb_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdalton%5Ffurb%5Fbr%2FDocuments%2F%5FTCCs%2F%5FTCCs%2FRodrigoOrthmannNielson%2FDocumentos%2F2017%2D10%2D22%5F17%2D42%5FPR%5FRodrigoOrthmannNielson%2Epdf&parent=%2Fpersonal%2Fdalton%5Ffurb%5Fbr%2FDocuments%2F%5FTCCs%2F%5FTCCs%2FRodrigoOrthmannNielson%2FDocumentos&slrid=0196599e%2Db0f8%2D5000%2D7cf0%2Da2613a281063
+
+**2018-04-05**
+- *21h47m* [CARMONA, ANDRÉ INÁCIO STRAGINSKI, 2008] http://tcc.bu.ufsc.br/Economia291880
