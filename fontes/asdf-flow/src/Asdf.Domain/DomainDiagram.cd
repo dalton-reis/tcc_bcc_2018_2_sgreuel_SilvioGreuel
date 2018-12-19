@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Asdf.Domain.Actions.AttributeNode">
+    <Position X="3.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAgAAAAAEA=</HashCode>
+      <FileName>Actions\AttributeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.DecisionNode">
+    <Position X="9.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAGAAAAAAEA=</HashCode>
+      <FileName>Actions\DecisionNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.GpioNode">
+    <Position X="3.75" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Actions\GpioNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.GuardNode">
+    <Position X="13.25" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>Actions\GuardNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.HttpGetNode">
+    <Position X="6.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgEA=</HashCode>
+      <FileName>Actions\HttpGetNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.HttpPostNode">
+    <Position X="16.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAQAAAAAEA=</HashCode>
+      <FileName>Actions\HttpPostNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.LogNode">
+    <Position X="6.25" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Actions\LogNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.MqttPublishNode">
+    <Position X="12" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>Actions\MqttPublhisNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Actions.Node">
+    <Position X="11.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAIDAAAAAAQAAAAAAAAEAAwAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Actions\Node.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Asdf.Domain.Actions.TemplateFormatProvider" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="13.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Actions\TemplateFormatProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Domain.Actions.TemplateNode">
+    <Position X="9" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>Actions\TemplateNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Devices.Device" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Devices\Device.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="1.932" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Domain.Flows.Flow" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAABAAAAAAAAQAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Flows\Flow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Domain.Templates.FieldTemplate" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAAAAAAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Templates\FieldTemplate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Domain.Templates.NodeTemplate" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAABAAAIABAQAAAAAAAAAAAAAAAQAgAA=</HashCode>
+      <FileName>Templates\NodeTemplate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Domain.Triggers.ButtonTrigger">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Triggers\ButtonTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Triggers.MqttTrigger">
+    <Position X="2.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Triggers\MqttTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Domain.Triggers.Trigger">
+    <Position X="6.25" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAgAAACAAAAAAAQQAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Triggers\Trigger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Asdf.Domain.Users.User" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAQAACAAQAgAAAAAAAAAAAAAABACA=</HashCode>
+      <FileName>Users\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="Asdf.Domain.Actions.GpioStatusType">
+    <Position X="7.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAgAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Actions\GpioStatusType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Asdf.Domain.Actions.OperationType">
+    <Position X="15.5" Y="13.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQRAACA=</HashCode>
+      <FileName>Actions\OperationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

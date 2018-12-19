@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.7.1" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asdf.Kernel\Asdf.Kernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Serilog">
+      <HintPath>C:\Users\greuel\.nuget\packages\serilog\2.7.1\lib\netstandard1.3\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Mqtt">
+      <HintPath>C:\Users\greuel\.nuget\packages\system.net.mqtt\0.5.42-beta\lib\netstandard2.0\System.Net.Mqtt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

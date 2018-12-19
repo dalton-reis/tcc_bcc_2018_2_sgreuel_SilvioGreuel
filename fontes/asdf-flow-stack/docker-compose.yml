@@ -1,0 +1,125 @@
+version: '3.7'
+
+services:
+    broker:
+        restart: unless-stopped
+        build: ./broker
+        ports:
+            - 15676:15676
+            - 15675:15675
+            - 1883:1883
+            - 8883:8883
+            - 15672:15672
+            - 5672:5672
+            - 5671:5671
+        networks:
+            - iot
+        volumes:
+            - broker_data:/var/lib/rabbitmq
+        env_file:
+            - broker.env
+        labels:
+            - "traefik.enable=true"
+            - "traefik.backend=broker"
+            - "traefik.domain=${DOMAINNAME}"
+            - "traefik.frontend.rule=Host:broker.${DOMAINNAME}"  
+            - "traefik.docker.network=iot"
+            - "traefik.port=15672"
+
+    database:
+        restart: unless-stopped
+        build: ./database
+        ports:
+            - 5432:5432
+        networks:
+            - iot
+        volumes:
+            - database_data:/var/lib/postgresql/data
+        env_file:
+            - database.env
+        labels:
+            - "traefik.enable=true"
+            - "traefik.backend=broker"
+            - "traefik.domain=${DOMAINNAME}"
+            - "traefik.frontend.rule=Host:database.${DOMAINNAME}"  
+            - "traefik.docker.network=iot"
+            - "traefik.port=5432"
+
+    migrator:
+        image: silviogreuel/asdf-flow-migrator
+        networks:
+            - iot
+
+    processor:
+        restart: on-failure
+        image: silviogreuel/asdf-flow-processor
+        depends_on:
+            - broker
+            - database
+        networks: 
+            - iot
+
+    lb:
+        restart: unless-stopped
+        build: ./lb
+        ports:
+            - 80:80
+            - 443:443
+            - 8080:8080
+        networks:
+            - iot
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - lb_data:/store
+        environment:
+            - DOMAINNAME=${DOMAINNAME}
+            - DO_AUTH_TOKEN=${DO_AUTH_TOKEN}
+        domainname: ${DOMAINNAME}
+        labels:
+            - "traefik.enable=true"
+            - "traefik.backend=traefik-be"
+            - "traefik.domain=${DOMAINNAME}"
+            - "traefik.frontend.rule=Host:traefik.${DOMAINNAME}"  
+            #- "traefik.frontend.rule=Host:${DOMAINNAME}; PathPrefixStrip: /traefik"
+            - "traefik.port=8080"
+            - "traefik.docker.network=iot"
+            - "traefik.frontend.headers.SSLRedirect=true"
+            - "traefik.frontend.headers.STSSeconds=315360000"
+            - "traefik.frontend.headers.browserXSSFilter=true"
+            - "traefik.frontend.headers.contentTypeNosniff=true"
+            - "traefik.frontend.headers.forceSTSHeader=true"
+            - "traefik.frontend.headers.SSLHost=example.com"
+            - "traefik.frontend.headers.STSIncludeSubdomains=true"
+            - "traefik.frontend.headers.STSPreload=true"
+            - "traefik.frontend.headers.frameDeny=true"
+
+    api:
+        restart: unless-stopped
+        image: silviogreuel/asdf-flow-api
+        ports:
+            - 9090:80
+        depends_on:
+            - database
+            - lb
+        networks:
+            - iot
+        labels:
+            - "traefik.enable=true"
+            - "traefik.backend=api"
+            - "traefik.domain=${DOMAINNAME}"
+            - "traefik.frontend.rule=Host:api.${DOMAINNAME}"  
+            - "traefik.docker.network=iot"
+            - "traefik.port=80"
+            
+networks:
+    iot:
+        external:
+            name: iot
+
+volumes:
+    broker_data:
+        driver: local
+    database_data:
+        driver: local
+    lb_data:
+        driver: local

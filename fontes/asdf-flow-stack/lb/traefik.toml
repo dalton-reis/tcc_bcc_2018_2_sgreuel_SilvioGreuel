@@ -1,0 +1,44 @@
+
+logLevel = "INFO"
+
+defaultEntryPoints = ["https","http"]
+#defaultEntryPoints = ["http"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+  [entryPoints.http.redirect]
+  entryPoint = "https"
+  [entryPoints.https]
+  address = ":443"
+  [entryPoints.https.tls]
+  [entryPoints.traefik]
+  address = ":8080"
+
+[retry]
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "greuel.com.br"
+watch = true
+exposedByDefault = false
+
+[acme]
+email = "silviogreuel@gmail.com"
+storage = "store/acme.json"
+entryPoint = "https"
+acmeLogging = true
+onDemand = false
+
+[acme.dnsChallenge]
+provider = "digitalocean"
+delayBeforeCheck = 0
+
+[[acme.domains]]
+main = "greuel.com.br"
+[[acme.domains]]
+main = "*.greuel.com.br"
+
+[api]
+ entryPoint = "traefik"
+ dashboard = true

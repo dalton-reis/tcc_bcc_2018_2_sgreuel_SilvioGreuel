@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Asdf.Application.Processor.Dynamics.DynamicField">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Dynamics\DynamicField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Application.Processor.Enrichers.PlainText.PlainTextPlugin" Collapsed="true">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enrichers\PlainText\PlainTextPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Application.Processor.Enrichers.PlainText.PlainTextSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Enrichers\PlainText\PlainTextSerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Asdf.Application.Processor.Templates.FieldTemplate" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAQAgAAAQAAA=</HashCode>
+      <FileName>Templates\FieldTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Application.Processor.Templates.Template" Collapsed="true">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAACAAAAAQAAAAAABAAAAAAAAABAAA=</HashCode>
+      <FileName>Templates\Template.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Application.Processor.Env" Collapsed="true">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asdf.Application.Processor.Program" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

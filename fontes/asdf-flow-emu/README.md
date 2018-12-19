@@ -1,0 +1,1 @@
+Enquanto nao tiveres os dispositivos IOT, podes usar estes aplicativos utilitarios para realizar a simulacao
